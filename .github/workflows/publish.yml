@@ -41,6 +41,4 @@ jobs:
         with:
           path: data/vacancies.sqlite3
           key: vacancy-history-${{ github.run_id }}
-      - name: Run this scheduled slot once
-        run: python telegram_bot.py --scheduled-once
 		
