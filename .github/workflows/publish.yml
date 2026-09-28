@@ -28,13 +28,13 @@ jobs:
       HH_APP_TOKEN: ${{ secrets.HH_APP_TOKEN }}
       HH_USER_AGENT: ${{ secrets.HH_USER_AGENT }}
     steps:
-      - name: Check out private project
+  	   - name: Check out private project
         uses: actions/checkout@v6
 
-      -name: Install Python
-	uses: actions/setup-python@7
-	with:
-	  python-version: "3.12"
+      - name: Install Python
+		uses: actions/setup-python@7
+        with:
+          python-version: "3.12"
 	
 	- name: Install dependencies
 	run: pip install -r requirements.txt
@@ -49,3 +49,4 @@ jobs:
 
       - name: Run this scheduled slot once
         run: python telegram_bot.py --scheduled-once
+		
