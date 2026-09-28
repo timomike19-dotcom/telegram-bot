@@ -1,0 +1,31 @@
+{
+  "mode": "test",
+  "source": "work_russia",
+  "city": "Москва",
+  "region_code": "7700000000000",
+  "timezone": "Europe/Moscow",
+  "automation_enabled": false,
+  "source_poll_interval_minutes": 10,
+  "full_refresh_interval_hours": 24,
+  "source_page_size": 100,
+  "source_hard_cap_per_query": 10000,
+  "telegram_min_seconds_between_messages": 4,
+  "repeat_after_days": 7,
+  "require_contact": false,
+  "target": {
+    "chat_id": -1003908484434,
+    "chat_type": "supergroup",
+    "topics": [
+      {
+        "name": "Повар",
+        "thread_id": 2,
+        "search_queries": ["повар", "су-шеф", "шеф-повар", "помощник повара"]
+      },
+      {
+        "name": "Кондитер",
+        "thread_id": 3,
+        "search_queries": ["кондитер", "пекарь-кондитер", "шеф-кондитер"]
+      }
+    ]
+  }
+}

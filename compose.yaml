@@ -1,0 +1,18 @@
+services:
+  bot:
+    build: .
+    container_name: food-jobs-telegram-bot
+    restart: unless-stopped
+    init: true
+    env_file:
+      - .env
+    environment:
+      TZ: Europe/Moscow
+      BOT_DATA_DIR: /data
+    volumes:
+      - bot_data:/data
+      - ./config.json:/app/config.json:ro
+      - ./vacancy_template.txt:/app/vacancy_template.txt:ro
+
+volumes:
+  bot_data:

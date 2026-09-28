@@ -1,0 +1,16 @@
+#Вакансия
+{title}
+
+{money_block}
+{schedule_block}
+{employer_block}
+{location_block}
+{description_block}
+{conditions_block}
+{responsibilities_block}
+{requirements_block}
+{contacts_block}
+
+📝 Разместить вакансию / резюме 👉 @HEDONI5T
+
+{source_block}

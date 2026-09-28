@@ -1,0 +1,9 @@
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+*.log
+bot_state.json
+vacancies.sqlite3
+data

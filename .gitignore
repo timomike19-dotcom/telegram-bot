@@ -1,0 +1,7 @@
+.env
+bot_state.json
+vacancies.sqlite3
+*.tmp
+*.log
+__pycache__/
+data/
