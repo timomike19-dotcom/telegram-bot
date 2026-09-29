@@ -1,5 +1,5 @@
 {
-  "mode": "test",
+  "mode": "production",
   "source": "work_russia",
   "city": "Москва",
   "region_code": "7700000000000",
