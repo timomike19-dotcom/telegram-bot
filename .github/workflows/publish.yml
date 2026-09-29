@@ -36,5 +36,5 @@ jobs:
       - name: Restore posting history
         uses: actions/cache@v4
         with:
-          path: data/vacancies.sqlite3
-          key: vacancy-history-${{github.run_id }}
+          path: data/vacancies.sqlite3 
+          key: vacancy-history-${{ github.run_id }}
