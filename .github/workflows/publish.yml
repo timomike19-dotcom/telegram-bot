@@ -20,10 +20,10 @@ jobs:
     timeout-minutes: 5
     env:
       BOT_DATA_DIR: data
-      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      HH_APP_TOKEN: ${{ secrets.HH_APP_TOKEN }}
-      HH_USER_AGENT: ${{ secrets.HH_USER_AGENT }}
+      GITHUB_EVENT_SCHEDULE: ${{github.event.schedule }}
+      TELEGRAM_BOT_TOKEN: ${{secrets.TELEGRAM_BOT_TOKEN }}
+      HH_APP_TOKEN: ${{secrets.HH_APP_TOKEN }}
+      HH_USER_AGENT: ${{secrets.HH_USER_AGENT}}
     steps:
       - name: Check out private project
         uses: actions/checkout@v6
@@ -37,5 +37,5 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/vacancies.sqlite3
-          key: vacancy-history-${{ github.run_id }}
+          key: vacancy-history-${{github.run_id }}
 		
