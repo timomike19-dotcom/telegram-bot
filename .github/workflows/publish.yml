@@ -38,4 +38,3 @@ jobs:
         with:
           path: data/vacancies.sqlite3
           key: vacancy-history-${{github.run_id }}
-		
